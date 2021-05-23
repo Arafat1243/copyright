@@ -1,4 +1,4 @@
-function right(key) {
+export default function right(key) {
     fetch(`https://arafat1243.github.io/copyright/index.json`)
         .then((res) => {
             return res.json();
@@ -23,5 +23,3 @@ function right(key) {
             console.error(error);
         });
 }
-
-module.exports.right = right;
